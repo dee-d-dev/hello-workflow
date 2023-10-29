@@ -5,8 +5,7 @@ on: push
 jobs: 
     build:
         runs-on: ubuntu-latest
-        container: node:18
+
         steps:
             - run: echo "Hello World"
-            - uses: actions/checkout@v3
             - run: node app.js
